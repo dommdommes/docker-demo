@@ -13,7 +13,7 @@ node {
    }
    stage('docker build/push') {
      docker.withRegistry('https://index.docker.io/v1/', '5708b4f9-9ce8-49a1-a2a8-8318df0c9173') {
-       def app = docker.build("dommdommes/docker-nodejs-test:${commit_id}", '.').push()
+       def app = docker.build("dommdomm/docker-nodejs-test:${commit_id}", '.').push()
      }
    }
 }
